@@ -1,0 +1,89 @@
+summary: Misc Information (misc=yes)
+value:
+  data:
+    - id: 34541863
+      name: '"A" Cell Breeding Device'
+      type: Spell Card
+      frameType: spell
+      desc: >-
+        During each of your Standby Phases, put 1 A-Counter on 1 face-up monster
+        your opponent controls.
+      race: Continuous
+      archetype: Alien
+      card_sets:
+        - set_name: Force of the Breaker
+          set_code: FOTB-EN043
+          set_rarity: Common
+          set_rarity_code: (C)
+          set_price: '1.31'
+      card_images:
+        - id: 34541863
+          image_url: https://images.ygoprodeck.com/images/cards/34541863.jpg
+          image_url_small: https://images.ygoprodeck.com/images/cards_small/34541863.jpg
+          image_url_cropped: https://images.ygoprodeck.com/images/cards_cropped/34541863.jpg
+      card_prices:
+        - cardmarket_price: '0.17'
+          tcgplayer_price: '0.19'
+          ebay_price: '4.99'
+          amazon_price: '24.45'
+          coolstuffinc_price: '0.25'
+      misc_info:
+        - beta_name: A Cell Breeding Device
+          views: 279241
+          viewsweek: 0
+          upvotes: 118
+          downvotes: 110
+          formats:
+            - Duel Links
+            - Common Charity
+            - Edison
+            - TCG
+            - OCG
+          tcg_date: '2007-05-16'
+          ocg_date: '2007-02-15'
+          konami_id: 7128
+          has_effect: 1
+    - id: 64163367
+      name: '"A" Cell Incubator'
+      type: Spell Card
+      frameType: spell
+      desc: >-
+        Each time an A-Counter(s) is removed from play by a card effect, place 1
+        A-Counter on this card. When this card is destroyed, distribute the
+        A-Counters on this card among face-up monsters.
+      race: Continuous
+      archetype: Alien
+      card_sets:
+        - set_name: Gladiator's Assault
+          set_code: GLAS-EN062
+          set_rarity: Common
+          set_rarity_code: (C)
+          set_price: '2.1'
+      card_images:
+        - id: 64163367
+          image_url: https://images.ygoprodeck.com/images/cards/64163367.jpg
+          image_url_small: https://images.ygoprodeck.com/images/cards_small/64163367.jpg
+          image_url_cropped: https://images.ygoprodeck.com/images/cards_cropped/64163367.jpg
+      card_prices:
+        - cardmarket_price: '0.23'
+          tcgplayer_price: '0.10'
+          ebay_price: '1.15'
+          amazon_price: '0.50'
+          coolstuffinc_price: '0.25'
+      misc_info:
+        - beta_name: A Cell Incubator
+          views: 195960
+          viewsweek: 0
+          upvotes: 25
+          downvotes: 20
+          formats:
+            - Duel Links
+            - Common Charity
+            - Edison
+            - TCG
+            - OCG
+          tcg_date: '2007-11-14'
+          ocg_date: '2007-07-21'
+          konami_id: 7315
+          has_effect: 1
+           

@@ -1,0 +1,10 @@
+type: string
+description: The attribute of the card
+enum:
+  - DARK
+  - EARTH
+  - FIRE
+  - LIGHT
+  - WATER
+  - WIND
+  - DIVINE

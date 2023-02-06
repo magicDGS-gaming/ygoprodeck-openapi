@@ -1,0 +1,44 @@
+type: object
+description: |
+  Set information for a single card.
+  
+  This model contains properties that are exclusive from `cardinfo.php` or `carsetinfo.php` endpoints.
+  
+  You can now optionally use `tcgplayer_data` parameter.
+  This model also contains the extra properties provided when `tcgplayer_data` parameter is present.  
+  Using this will replace our internal Card Set data with TCGplayer Card Set Data.
+      
+  NOTE\: If using `tcgplayer_data`, we cannot guarantee that Set Names, Rairites and other info are correct.
+  TCGplayer have occasionally made up Rarity names in the past and don't always conform to correct Card Set Names.
+  A prime example of this is `Legend of Blue Eyes White Dragon` which TCGplayer lists as `The Legend of Blue Eyes White Dragon`.
+properties:
+  id:
+    description: ID of the card (only on `cardsetinfo.php`)
+    type: number
+  name:
+    description: Name of the card (only on `cardsetinfo.php`)
+    type: string
+  set_name:
+    description: Name of the set
+    type: string
+  set_code:
+    description: The code of the card within the set
+    type: string
+  set_rarity:
+    description: Rarity of the card within the set
+    type: string
+  set_rarity_code:
+    description: Rarity code (only on `cardinfo.php`)
+    type: string
+  set_price:
+    description: The $ value
+    type: string
+  # exclusive properties from tcgplayer_data
+  set_edition:
+    description: Set edition on TCGPlayer website (only for `tcgplayer_data` on `cardinfo.php`) 
+    type: string
+  set_url:
+    description: URL on TGCPlayer website (only for `tcgplayer_data` on `cardinfo.php`)
+    type: string
+    format: url
+  

@@ -1,0 +1,13 @@
+description: |
+  Error message
+  
+  Almost every parameter will now return an error code if an invalid value is passed to it (as opposed to ignoring it and returning all cards like in previous versions).
+  The user will also be prompted on all the correct possible values to pass so they aren't left guessing.
+  
+  This should save users bandwidth on receiving large requests when requesting malformed urls.
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/ResponseError.yaml'
+    example:
+      error: 'Error message'

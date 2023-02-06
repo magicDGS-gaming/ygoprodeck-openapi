@@ -1,0 +1,11 @@
+type: object
+properties:
+  set_name:
+    type: string
+  set_code:
+    type: string
+  num_of_cards:
+    type: integer
+  tcg_date:
+    type: string
+    format: date

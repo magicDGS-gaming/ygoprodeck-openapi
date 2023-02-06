@@ -1,0 +1,6 @@
+name: banlist
+in: query
+description: Filter the cards by banlist.
+required: false
+schema:
+  $ref: '../../schemas/BanlistFormat.yaml'

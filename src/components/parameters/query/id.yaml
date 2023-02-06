@@ -1,0 +1,21 @@
+name: id
+in: query
+description: |
+  The ID of the card.
+  You can pass multiple `,` separated IDs to this parameter.
+  
+   You __cannot__ pass this alongside `name`.
+required: false
+style: form
+explode: false
+schema:
+  type: integer
+examples:
+  singleValue:
+    summary: Single value
+    value: 6983839
+  multipleValues:
+    summary: Multiple-values
+    value:
+      - 6983839
+      - 69838400

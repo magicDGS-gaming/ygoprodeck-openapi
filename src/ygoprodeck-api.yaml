@@ -1,0 +1,37 @@
+openapi: 3.0.3
+info:
+  title: Yu-Gi-Oh! API by YGOPRODeck
+  version: v7
+  termsOfService: https://ygoprodeck.com/api-guide/
+  # license object is REQUIRED by redoc
+  license:
+    name: Unknown
+    url: https://ygoprodeck.com/about/
+  description: |
+    This is a third-party project to document for developers the [Yu-Gi-Oh! API by YGOPRODeck](https://ygoprodeck.com/api-guide/).
+    Please, visit the site for the official documentation.
+    
+    This is the description based on the last update (24th January 2023).
+servers:
+  - url: https://db.ygoprodeck.com/api/v7
+externalDocs:
+  url: https://ygoprodeck.com/api-guide/
+
+paths:
+  /cardinfo.php:
+    $ref: './paths/cardinfo.yaml'
+  /checkDBVer.php:
+    $ref: './paths/checkDBVer.yaml'
+  /images/{image_type}/{image_id}.jpg:
+    servers:
+      - url: https://images.ygoprodeck.com
+        description: Override base path for all operations with images
+    $ref: './paths/images.yaml'
+  /cardsets.php:
+    $ref: './paths/cardsets.yaml'
+  /archetypes.php:
+    $ref: './paths/archetypes.yaml'
+  /cardsetsinfo.php:
+    $ref: './paths/cardsetsinfo.yaml'
+  /randomcard.php:
+    $ref: './paths/randomcard.yaml'

@@ -1,0 +1,9 @@
+name: has_effect
+in: query
+description: |
+  Check if a card actually has an effect or not by passing a boolean.
+
+  Examples of cards that do not have an actual effect\: Black Skull Dragon, LANphorhynchus, etc etc.
+required: false
+schema:
+   type: boolean

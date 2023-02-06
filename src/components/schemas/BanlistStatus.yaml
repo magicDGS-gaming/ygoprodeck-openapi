@@ -1,0 +1,6 @@
+type: string
+description: The status of the card on a Ban List
+enum:
+  - Banned
+  - Limited
+  - Semi-Limited

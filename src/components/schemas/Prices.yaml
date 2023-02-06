@@ -1,0 +1,21 @@
+type: object
+description: |
+  Holds card prices from multiple vendors. 
+
+  This is the lowest price found across multiple versions of that card.
+properties:
+  cardmarket_price:
+    description: The price of the card from Cardmarket (in €).
+    type: string
+  tcgplayer_price: 
+    description: The price of the card from Tcgplayer (in $).
+    type: string
+  ebay_price:
+    description: The price of the card from eBay (in $).
+    type: string
+  amazon_price:
+    description: The price of the card from Amazon (in $).
+    type: string
+  coolstuffinc_price:
+    description: The price of the card from CoolStuffInc (in $).
+    type: string

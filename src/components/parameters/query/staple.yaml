@@ -1,0 +1,6 @@
+name: staple
+in: query
+description: Check if card is a staple.
+required: false
+schema:
+  $ref: '../../schemas/YesSwitch.yaml'

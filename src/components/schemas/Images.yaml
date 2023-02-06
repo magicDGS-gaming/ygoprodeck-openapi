@@ -1,0 +1,18 @@
+type: object
+description: URLs for different image types
+properties:
+  id:
+    type: number
+    description: ID or Passcode of the card
+  image_url:
+    description: URL for the full size image
+    type: string
+    format: url
+  image_url_small:
+    description: URL for the small size image
+    type: string
+    format: url
+  image_url_cropped:
+    description: URL for the cropped image art
+    type: string
+    format: url

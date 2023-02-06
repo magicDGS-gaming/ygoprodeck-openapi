@@ -1,0 +1,9 @@
+name: konami_id
+in: query
+description:  |
+  The Official Konami ID of the card.
+  
+  __This is not the card ID/Passcode.__
+required: false
+schema:
+  type: integer

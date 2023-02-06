@@ -1,0 +1,11 @@
+name: race
+in: query
+description: |
+  Filter by the card race which is officially called type (Spellcaster, Warrior, Insect, etc).
+  This is also used for Spell/Trap cards.
+  You can pass multiple comma `,` races to this parameter.
+required: false
+style: form
+explode: false
+schema:
+  $ref: '../../schemas/Race.yaml'

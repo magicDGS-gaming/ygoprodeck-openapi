@@ -1,0 +1,18 @@
+description: |
+  Card Information
+  
+  __If a piece of response info is empty or null then it will NOT show up.
+  For example, Link Monsters have no DEF, Level or Scale value so those values will not be returned.__
+
+  Since v3\: Card images are now properly returned without slashes being incorrectly escaped as it was with v2.
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/ResponseCardData.yaml'
+    examples:
+      defaultExample:
+        $ref: '../examples/cardinfo_default.yaml'
+      paginationExample:
+        $ref: '../examples/pagination.yaml'
+      miscExample:
+        $ref: '../examples/misc.yaml'

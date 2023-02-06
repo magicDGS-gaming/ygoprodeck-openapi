@@ -1,0 +1,9 @@
+name: fname
+in: query
+description: |
+  A fuzzy search using a string.
+  For example `fname=Magician` to search by all cards with "Magician" in the name
+required: false
+schema:
+  type: string
+  example: Magician

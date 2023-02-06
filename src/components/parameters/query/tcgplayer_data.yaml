@@ -1,0 +1,11 @@
+name: tcgplayer_data
+in: query
+description: |
+  Replaces the Card Set data from our Internal Data to TCGplayer Data and adds `set_edition` and `set_url` properties to the respnse.
+  
+  NOTE\: Using this parameter does not uarantee that Set Names, Rairites and other info are correct.
+  TCGplayer have occasionally made up Rarity names in the past and don't always conform to correct Card Set Names.
+  A prime example of this is "Legend of Blue Eyes White Dragon" which TCGplayer lists as "The Legend of Blue Eyes White Dragon".
+required: false
+schema:
+  type: boolean

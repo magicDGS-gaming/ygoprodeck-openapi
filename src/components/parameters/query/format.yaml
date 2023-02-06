@@ -1,0 +1,14 @@
+name: format
+in: query
+description: |
+  Filter by format of the cards (tcg, goat, ocg goat, speed duel, rush duel, duel links).
+  
+  Excluding the Format parameter will result in all Yu-Gi-Oh! cards excluding `rush duel`.
+  
+  _Note\: `duel links` is not 100% accurate but is close.
+  Using tcg results in all cards with a set TCG Release Date and excludes Speed Duel/Rush Duel cards._
+required: false
+schema:
+  # TODO: looks like not all the formats are documented! also maybe more would be added then!
+  # TODO: decide if we can do an enum here!
+  type: string

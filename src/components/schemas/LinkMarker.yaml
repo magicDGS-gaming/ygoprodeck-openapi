@@ -1,0 +1,11 @@
+type: string
+description: The Link Markers of the card if it's of type "Link Monster".
+enum:
+  - Top
+  - Bottom
+  - Left
+  - Right
+  - Bottom-Left
+  - Bottom-Right
+  - Top-Left
+  - Top-Right

@@ -1,0 +1,11 @@
+name: image_type
+in: path
+required: true
+description: |
+  - `cards` - full size images
+  - `cards_small` - small size images
+  - `cards_cropped` - cropped image art
+schema:
+  type: string
+  enum: [cards, cards_small, cards_cropped]
+  default: cards

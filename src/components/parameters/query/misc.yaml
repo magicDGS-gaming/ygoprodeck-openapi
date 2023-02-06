@@ -1,0 +1,6 @@
+name: misc
+in: query
+description: Show additional response info (Card Views, Beta Name, etc.).
+required: false
+schema:
+  $ref: '../../schemas/YesSwitch.yaml'

@@ -1,0 +1,4 @@
+type: string
+description: This is a constant representing a `yes` (to enable some functionality)
+enum:
+  - 'yes'

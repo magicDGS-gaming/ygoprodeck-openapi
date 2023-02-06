@@ -1,0 +1,8 @@
+description: |
+  Card Sets
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: '../schemas/ResponseCardSetItem.yaml'

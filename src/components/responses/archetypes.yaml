@@ -1,0 +1,8 @@
+description: |
+  Card Archetypes
+
+  All of the current Yu-Gi-Oh! Card Archetype Names stored in the database (sorted by A-Z).
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/ResponseArchetypes.yaml'

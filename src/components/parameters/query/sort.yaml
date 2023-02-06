@@ -1,0 +1,6 @@
+name: sort
+in: query
+required: false
+description: Sort the order of the cards.
+schema:
+  $ref: '../../schemas/SortOrder.yaml'

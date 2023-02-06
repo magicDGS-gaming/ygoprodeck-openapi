@@ -1,0 +1,9 @@
+name: cardset
+in: query
+required: false
+description: |
+  Filter the cards by card set (Metal Raiders, Soul Fusion, etc).
+  
+  __IMPORTANT: Allowed values for this parameter could be get from the `/cardsets.php` endpoint__
+schema:
+  type: string

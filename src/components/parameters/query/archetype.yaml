@@ -1,0 +1,9 @@
+name: archetype
+in: query
+required: false
+description: |
+  Filter the cards by archetype (Dark Magician, Prank-Kids, Blue-Eyes, etc).
+  
+  __IMPORTANT: Allowed values for this parameter could be get from the `/archetypes.php` endpoint__
+schema:
+  type: string

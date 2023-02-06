@@ -1,0 +1,82 @@
+type: object
+properties:
+  # All Cards - TODO: should we use polymorphism?
+  id:
+    description: ID or Passcode of the card
+    type: integer
+  name:
+    description: Name of the card
+    type: string
+  type:
+    $ref: 'Type.yaml'
+  frameType:
+    $ref: 'FrameType.yaml'
+  desc:
+    description: Card description/effect
+    type: string
+  archetype:
+    description: |
+      The Archetype that the card belongs to.
+      We take feedback on Archetypes [here](https://github.com/AlanOC91/YGOPRODeck/issues/10) 
+    type: string
+  # Monster cards
+  atk:
+    description: The ATK value of the card
+    type: integer
+  def:
+    description: The DEF value of the card
+    type: integer
+  level:
+    description: The Level/RANK of the card
+    type: integer
+  race:
+    # TODO: this is also part of the Spell/Trap Cards (with differetn enum) - polymorphism?
+    $ref: 'Race.yaml'
+  attribute:
+    $ref: 'Attribute.yaml'
+  # Additional Response for Pendulum Monsters 
+  scale:
+    description: The Pendulum Scale Value.
+    type: integer
+  # Additional Response for Link Monsters
+  linkval:
+    description: The Link Value of the card if it's of type "Link Monster"
+    type: integer
+  linkmarkers:
+    type: array
+    items:
+      $ref: 'Linkmarker.yaml'
+  # Arrays with info for cards
+  card_sets:
+    type: array
+    items:
+      $ref: 'CardSetInfo.yaml'
+  card_images:
+    description: |
+      The array holds each image/alt artwork image along with the Card ID
+
+      For example, two sets of Card IDs/Images within the array represents the default artwork and the additional alternative artwork.
+    type: array
+    items:
+      $ref: 'Images.yaml' 
+  card_prices:
+    type: array
+    items:
+      $ref: 'Prices.yaml'
+  # optional values
+  banlist_info:
+    type: object
+    properties:
+      ban_tcg:
+        description: The status of the card on the TCG Ban List
+        $ref: 'BanlistStatus.yaml'
+      ban_ocg:
+        description: The status of the card on the OCG Ban List
+        $ref: 'BanlistStatus.yaml'
+      ban_goat:
+        description: he status of the card on the [GOAT Format](https://ygoprodeck.com/article/an-introduction-to-goat-format-17528) Ban List
+        $ref: 'BanlistStatus.yaml'
+  misc_info:
+    type: array
+    items:
+      $ref: 'CardMisc.yaml'

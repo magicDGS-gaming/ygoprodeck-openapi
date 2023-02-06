@@ -1,0 +1,11 @@
+description: |
+  Database Version
+  
+  The `database_version` and `date` are incremented when\:
+      
+  - New card is added to the database
+  - Card information is updated/modified on the main database.
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/ResponseDBVersion.yaml'

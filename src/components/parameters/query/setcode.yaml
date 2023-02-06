@@ -1,0 +1,7 @@
+name: setcode
+in: query
+required: true
+description: Set code from the card
+schema:
+  type: string
+  example: SDY-046

@@ -1,0 +1,10 @@
+type: string
+description: Constant representing the available properties to sort with
+enum:
+  - atk 
+  - def
+  - name
+  - type
+  - level
+  - id
+  - new

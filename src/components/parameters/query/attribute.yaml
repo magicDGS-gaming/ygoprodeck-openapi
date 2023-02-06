@@ -1,0 +1,10 @@
+name: attribute
+in: query
+description: |
+  Filter by the card attribute
+  You can pass multiple `,` separatedattributes to this parameter.
+required: false
+style: form
+explode: false
+schema:
+  $ref: '../../schemas/Attribute.yaml'

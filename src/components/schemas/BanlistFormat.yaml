@@ -1,0 +1,5 @@
+type: string
+enum:
+  - tcg
+  - ocg
+  - goat

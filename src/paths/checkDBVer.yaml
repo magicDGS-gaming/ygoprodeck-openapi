@@ -1,0 +1,18 @@
+get:
+  operationId: getCheckDBVer
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: Check Database Version
+  description: |
+    This is not a cached endpoint and database_version and date are incremented when\:
+    - New card is added to the database.
+    - Card information is updated/modified on the main database.
+    
+    This follows the same rate limiting procedures as the card lookup endpoint.
+
+    This is not a cached endpoint.
+  responses:
+    '200':
+      $ref: '../components/responses/checkdbver.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

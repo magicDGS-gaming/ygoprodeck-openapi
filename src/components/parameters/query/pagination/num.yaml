@@ -1,0 +1,9 @@
+name: num
+in: query
+description: |
+  __Pagination parameter:__ Number of results to return.
+  Use in conjuction with `offset`
+required: false
+schema:
+  type: integer
+  example: 10

@@ -1,0 +1,52 @@
+get:
+  operationId: getCardInfo
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: Get Card Information
+  description: |
+    This is the only endpoint that is now needed.
+    You can pass multiple paramters to this endpoint to filter the information retrieved.
+
+    The specific results from this endpoint are cached for 2 days (172800 seconds) but will be manually cleared upon new card entry.
+
+    You can also use the following equation symbols for `atk`, `def` and `level`:
+      - `lt` - less than
+      - `lte` - less than equals to
+      - `gt` - greater than
+      - `gte` - greater than equals to
+  parameters:
+    - $ref: '../components/parameters/query/name.yaml'
+    - $ref: '../components/parameters/query/fname.yaml'
+    - $ref: '../components/parameters/query/id.yaml'
+    - $ref: '../components/parameters/query/konami_id.yaml'
+    - $ref: '../components/parameters/query/type.yaml'
+    - $ref: '../components/parameters/query/atk.yaml'
+    - $ref: '../components/parameters/query/def.yaml'
+    - $ref: '../components/parameters/query/level.yaml'
+    - $ref: '../components/parameters/query/race.yaml'
+    - $ref: '../components/parameters/query/attribute.yaml'
+    - $ref: '../components/parameters/query/link.yaml'
+    - $ref: '../components/parameters/query/linkmarker.yaml'
+    - $ref: '../components/parameters/query/scale.yaml'
+    - $ref: '../components/parameters/query/cardset.yaml'
+    - $ref: '../components/parameters/query/archetype.yaml'
+    - $ref: '../components/parameters/query/banlist.yaml'
+    - $ref: '../components/parameters/query/sort.yaml'
+    - $ref: '../components/parameters/query/format.yaml'
+    - $ref: '../components/parameters/query/misc.yaml'
+    - $ref: '../components/parameters/query/staple.yaml'
+    - $ref: '../components/parameters/query/has_effect.yaml'
+    # source data switches
+    - $ref: '../components/parameters/query/tcgplayer_data.yaml'
+    # release date
+    - $ref: '../components/parameters/query/release_date/startdate.yaml'
+    - $ref: '../components/parameters/query/release_date/enddate.yaml'
+    - $ref: '../components/parameters/query/release_date/dateregion.yaml'
+    # pagination
+    - $ref: "../components/parameters/query/pagination/num.yaml"
+    - $ref: '../components/parameters/query/pagination/offset.yaml'
+  responses:
+    '200':
+      $ref: '../components/responses/cardinfo.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

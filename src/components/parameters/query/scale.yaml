@@ -1,0 +1,6 @@
+name: scale
+in: query
+description: Filter the cards by Pendulum Scale value.
+required: false
+schema:
+  type: integer

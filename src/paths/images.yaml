@@ -1,0 +1,21 @@
+get:
+  operationId: getImage
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: Card Images
+  description: |
+    __Images are pulled from our image server `images.ygoprodeck.com`.
+    You must download and store these images yourself!__
+    
+    Please only pull an image __once__ and then store it locally.
+    If we find you are pulling a very high volume of images per second then your IP will be blacklisted and blocked.
+    
+    Our card images are in `.jpg` format and are web optimized.
+  parameters:
+    - $ref: '../components/parameters/path/image_type.yaml'
+    - $ref: '../components/parameters/path/image_id.yaml'
+  responses:
+    '200':
+      $ref: '../components/responses/image.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

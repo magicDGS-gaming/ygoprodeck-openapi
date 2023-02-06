@@ -1,0 +1,6 @@
+description: |
+  Card Set
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/CardSetInfo.yaml'

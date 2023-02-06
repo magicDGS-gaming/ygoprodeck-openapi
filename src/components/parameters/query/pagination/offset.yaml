@@ -1,0 +1,9 @@
+name: offset
+in: query
+description: |
+  __Pagination parameter:__ Number of card to start with.
+  Use in conjuction with `num`
+required: false
+schema:
+  type: number
+  example: 0

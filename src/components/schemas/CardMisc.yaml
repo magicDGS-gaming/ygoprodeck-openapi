@@ -1,0 +1,45 @@
+type: object
+properties:
+  beta_name:
+    type: string
+    description: The Old/Temporary/Translated name the card had.
+  views:
+    type: integer
+    description: The number of times a card has been viewed in our database (does not include API/external views).
+  viewsweek:
+    type: integer
+    description: The number of times a card has been viewed in our database this week (does not include API/external views).
+  upvotes:
+    type: integer
+    description: The number of upvotes a card has.
+  downvotes:
+    type: integer
+    description: The number of downvotes a card has.
+  formats:
+    type: array
+    items:
+      type: string
+      # TODO: looks like not all the formats are documented! also maybe more would be added then!
+      # TODO: decide if we can do an enum here!
+    description: The available formats the card is in (tcg, ocg, goat, ocg goat, duel links, rush duel or speed duel).
+  treated_a:
+    type: string
+    description: |
+      If the card is treated as another card.
+      For example, Harpie Lady 1,2,3 are treated as Harpie Lady.
+  tcg_date:
+    type: string
+    description: The original date the card was released in the TCG.
+  ocg_date:
+    type: string
+    description: The original date the card was released in the OCG.
+  konami_id:
+    type: integer
+    description: The Official Konami ID of the card. __This is not the card ID/Passcode__.
+  has_effect:
+    type: integer
+    minimum: 0
+    maximum: 1
+    description: |
+      If the card has an actual text effect. 1 means true and 0 is false.
+      Examples of cards that do not have an actual effect (false/0)\: Black Skull Dragon, LANphorhynchus, etc etc.

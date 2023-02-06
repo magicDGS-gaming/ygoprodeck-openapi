@@ -1,0 +1,20 @@
+name: name
+in: query
+description: |
+  The __exact__ name of the card.
+  You can pass multiple `|` separated names to this parameter (`Baby Dragon|Time Wizard`).
+  
+  You __cannot__ pass this alongside `id`.
+required: false
+style: pipeDelimited
+schema:
+  type: string
+examples:
+  singleValue:
+    summary: Single value
+    value: Dark Magician
+  multipleValues:
+    summary: Multiple-values
+    value:
+      - Baby Dragon
+      - Time Wizardd

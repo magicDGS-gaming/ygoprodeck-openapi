@@ -1,0 +1,16 @@
+get:
+  operationId: getCardSetInfo
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: Card Set Information
+  description: |
+    This follows the same rate limiting procedures as the card lookup endpoint.
+    
+    If no (or invalid) GET parameters are found in the call, then it will return an error.
+  parameters:
+    - $ref: '../components/parameters/query/setcode.yaml'
+  responses:
+    '200':
+      $ref: '../components/responses/cardsetsinfo.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

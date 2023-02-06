@@ -1,0 +1,13 @@
+name: level
+in: query
+description: |
+  Filter by card level/RANK.
+ 
+  You can also use the following equation symbols\: 
+   - `lt` - less than
+   - `lte` - less than equals to
+   - `gt` - greater than
+   - `gte` - greater than equals to
+required: false
+schema:
+  type: string

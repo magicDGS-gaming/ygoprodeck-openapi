@@ -1,0 +1,6 @@
+name: image_id
+in: path
+required: true
+description: ID for the card
+schema:
+  type: string

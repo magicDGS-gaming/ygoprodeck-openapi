@@ -1,0 +1,16 @@
+get:
+  operationId: getRandomCard
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: Random Card
+  description: |
+    This follows the same rate limiting procedures as the card lookup endpoint.
+    
+    Cache Control is disabled for this endpoint so it should always provide a fresh card.
+    
+    If any GET parameters are found in the call, then it will return an error.
+  responses:
+    '200':
+      $ref: '../components/responses/card.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

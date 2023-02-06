@@ -1,0 +1,6 @@
+description: |
+  Card
+content:
+  application/json:
+    schema:
+      $ref: '../schemas/Card.yaml'

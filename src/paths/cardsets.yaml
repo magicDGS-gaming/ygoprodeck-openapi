@@ -1,0 +1,17 @@
+get:
+  operationId: getCardSets
+  tags: [Yu-Gi-Oh! API]
+  security: []
+  summary: All Card Sets
+  description: |
+    This simply returns all of the current Yu-Gi-Oh! Card Set Names we have stored in the database.
+    Use this to get a quick snapshot of all the Yu-Gi-Oh! Card Sets sorted by A-Z.
+
+    This follows the same rate limiting procedures as the card lookup endpoint.
+    
+    If any GET parameters are found in the call, then it will return an error.
+  responses:
+    '200':
+      $ref: '../components/responses/cardsets.yaml'
+    '400':
+      $ref: '../components/responses/error.yaml'

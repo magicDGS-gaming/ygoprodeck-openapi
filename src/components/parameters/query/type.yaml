@@ -1,0 +1,10 @@
+name: type
+in: query
+description: |
+  The type of card you want to filter by.
+  You can pass multiple `,` separated types to this parameter.
+required: false
+style: form
+explode: false
+schema:
+  $ref: '../../schemas/Type.yaml'

@@ -1,0 +1,6 @@
+name: link
+in: query
+description: Filter the cards by Link value.
+required: false
+schema:
+  type: integer

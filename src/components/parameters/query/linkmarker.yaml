@@ -1,0 +1,10 @@
+name: linkmarker
+in: query
+description: |
+  Filter the cards by Link Marker value.
+  You can pass multiple `,` separated values to this parameter.
+required: false
+style: form
+explode: false
+schema:
+  $ref: '../../schemas/LinkMarker.yaml'
