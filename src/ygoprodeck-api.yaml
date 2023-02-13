@@ -10,8 +10,79 @@ info:
   description: |
     This is a third-party project to document for developers the [Yu-Gi-Oh! API by YGOPRODeck](https://ygoprodeck.com/api-guide/).
     Please, visit the site for the official documentation.
+  
+    ## API description
+  
+    You can support this free Yu-Gi-Oh! API by purchasing a subscription to [YGOPRODeck Premium](https://ygoprodeck.com/premium/).  
+    _IMPORTANT: While our API is and always will be completely free to use, please consider white-listing [YGOPRODeck.com](YGOPRODeck.com) on your adblocker._
     
-    This is the description based on the last update (24th January 2023).
+    This Yu-Gi-Oh! API is now available for public consumption.
+    Below are the details on how to use it and what kind of response is to be expected from the API.
+    
+    __Please download and store all data pulled from this API locally__ to keep the amount of API calls used to a minimum.
+    Failure to do so may result in either your IP address being blacklisted or the API being rolled back.  
+    __NOTE ON IMAGES: Do not continually hotlink images directly from this site.
+    Please download and re-host the images yourself.
+    Failure to do so will result in an IP blacklist.
+    Please read this guide on where to download images.__
+    
+    __Rate Limiting__ on the API is enabled.
+    The rate limit is __20 requests per 1 second__.
+    If you exceed this, you are blocked from accessing the API for 1 hour.
+    We will monitor this rate limit for now and adjust accordingly.
+    
+    The API responses are cached on the __provider side__.
+    The cache timings will be given below.
+    These are subject to change.
+    
+    ## API Changelog v7
+    
+    (Last update 24th January 2023)
+    
+    __Upgrade Note__: Please read through the documentation before upgrading to v7.
+    Your code will not work if you simply change the endpoint to v7, please read the documentation below.
+    
+    _All older versions of the API are now deprecated._
+    
+    * You can now query by `konami_id`.
+    * Added `tcgplayer_data` parameter.
+      This changes Card Set data from our Internal Data to TCGplayer Data.
+    * `set_edition` has been added to `card_sets` when using `tcgplayer_data` parameter.
+    * `set_url` has been added to `card_sets` when using `tcgplayer_data` parameter.
+    * The `card_sets` response data has been overhauled.
+      It now takes data from TCGplayer and will show much more acurate prices.
+    * Images have been moved over to the `images.ygoprodeck.com` domain.
+    
+    ## API Showcase
+    
+    One of the main sites using this API is the [YGOPRODeck site](https://ygoprodeck.com/).
+    They use this API on Card Information pages, Advanced Search and Deck Builder.
+    The following is a list of sites/services that make use of our API and have allowed us to showcase them.
+    Check them out!
+    - [Yu-Gi-Oh! Discord Bot](https://db.ygoprodeck.com/bots/)
+      - A Yu-Gi-Oh! Discord bot from YGOPRODeck for retrieving Card Information.
+    - [Duel Links Meta Website](https://www.duellinksmeta.com/)
+      - A Website dedicated to Yu-Gi-Oh! Duel Links.
+    - [Yugiohdeck](https://yugiohdeck.github.io/)
+      - A Yu-Gi-Oh! Deck Viewing/Pricing Website.
+    - [YCM (Yugi-Calculator-MAX)](https://ycm.netlify.app/calc)
+      - A Yu-Gi-Oh! Mobile Deck Building/Calculator App.
+    - [Duelist](https://play.google.com/store/apps/details?id=com.zurdo.duelist)
+      - A Yu-Gi-Oh! Android Application for Building Decks.
+    - [Yu-Gi-Oh! Tracker](http://yugiohtracker.com/)
+      - A Yu-Gi-Oh! Card Search Website.
+    - [Anime Card Maker](https://www.aygocm.co.uk/)
+      - A PC program that allows you to create anime-styled Yu-Gi-Oh! cards.
+    - [YGO Progression Discord Bot](https://github.com/EMachad0/YGO-Progression-Bot)
+      - A Discord Bot that allows you to run a Yu-Gi-Oh! progression series.
+    - [Autocard Anywhere](https://autocardanywhere.com/)
+      - A Browser Addon that automatically converts card names on web pages to card information links.
+    
+    ## Credits
+    
+    - Credit to all the people who contribute/offer suggestions over on [the YGOPRODeck github](https://github.com/AlanOC91/YGOPRODeck/issues)
+    - Credit to the Duelists Unite team for the cropped artwork images.
+    
 servers:
   - url: https://db.ygoprodeck.com/api/v7
 externalDocs:
