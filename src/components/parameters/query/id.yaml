@@ -9,7 +9,9 @@ required: false
 style: form
 explode: false
 schema:
-  type: integer
+  type: array
+  items:
+    type: integer
 examples:
   singleValue:
     summary: Single value

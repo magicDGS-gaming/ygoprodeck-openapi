@@ -7,4 +7,6 @@ required: false
 style: form
 explode: false
 schema:
-  $ref: '../../schemas/Attribute.yaml'
+  type: array
+  items:
+    $ref: '../../schemas/Attribute.yaml'

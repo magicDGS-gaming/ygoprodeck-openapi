@@ -7,4 +7,6 @@ required: false
 style: form
 explode: false
 schema:
-  $ref: '../../schemas/LinkMarker.yaml'
+  type: array
+  items:
+    $ref: '../../schemas/LinkMarker.yaml'

@@ -8,7 +8,9 @@ description: |
 required: false
 style: pipeDelimited
 schema:
-  type: string
+  type: array
+  items:
+    type: string
 examples:
   singleValue:
     summary: Single value

@@ -45,7 +45,7 @@ properties:
   linkmarkers:
     type: array
     items:
-      $ref: 'Linkmarker.yaml'
+      $ref: 'LinkMarker.yaml'
   # Arrays with info for cards
   card_sets:
     type: array

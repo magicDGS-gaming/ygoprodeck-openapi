@@ -8,4 +8,6 @@ required: false
 style: form
 explode: false
 schema:
-  $ref: '../../schemas/Race.yaml'
+  type: array
+  items:
+    $ref: '../../schemas/Race.yaml'
