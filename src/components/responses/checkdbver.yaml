@@ -8,4 +8,6 @@ description: |
 content:
   application/json:
     schema:
-      $ref: '../schemas/ResponseDBVersion.yaml'
+      type: array
+      items:
+        $ref: '../schemas/ResponseDBVersion.yaml'
