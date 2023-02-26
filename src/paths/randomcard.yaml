@@ -1,6 +1,6 @@
 get:
   operationId: getRandomCard
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck DB]
   security: []
   summary: Random Card
   description: |

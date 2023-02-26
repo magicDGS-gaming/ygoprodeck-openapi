@@ -1,6 +1,6 @@
 get:
   operationId: getCardInfo
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck DB]
   security: []
   summary: Get Card Information
   description: |

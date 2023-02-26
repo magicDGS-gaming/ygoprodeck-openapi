@@ -1,6 +1,6 @@
 get:
   operationId: getImage
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck Images]
   security: []
   summary: Card Images
   description: |

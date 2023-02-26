@@ -1,6 +1,6 @@
 get:
   operationId: getCheckDBVer
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck DB]
   security: []
   summary: Check Database Version
   description: |

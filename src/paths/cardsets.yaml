@@ -1,6 +1,6 @@
 get:
   operationId: getCardSets
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck DB]
   security: []
   summary: All Card Sets
   description: |

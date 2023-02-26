@@ -1,6 +1,6 @@
 get:
   operationId: getArchetypes
-  tags: [Yu-Gi-Oh! API]
+  tags: [YGOPRODeck DB]
   security: []
   summary: All Card Archetypes
   description: |
