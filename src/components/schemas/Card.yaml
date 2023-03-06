@@ -4,6 +4,7 @@ properties:
   id:
     description: ID or Passcode of the card
     type: integer
+    format: int64
   name:
     description: Name of the card
     type: string
