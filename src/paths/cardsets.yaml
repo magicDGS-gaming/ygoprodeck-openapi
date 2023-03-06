@@ -1,6 +1,6 @@
 get:
   operationId: getCardSets
-  tags: [YGOPRODeck DB]
+  tags: [ygoprodeck-db]
   security: []
   summary: All Card Sets
   description: |

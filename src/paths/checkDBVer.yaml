@@ -1,6 +1,6 @@
 get:
   operationId: getCheckDBVer
-  tags: [YGOPRODeck DB]
+  tags: [ygoprodeck-db]
   security: []
   summary: Check Database Version
   description: |

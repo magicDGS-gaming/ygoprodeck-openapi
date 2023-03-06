@@ -1,6 +1,6 @@
 get:
   operationId: getArchetypes
-  tags: [YGOPRODeck DB]
+  tags: [ygoprodeck-db]
   security: []
   summary: All Card Archetypes
   description: |
