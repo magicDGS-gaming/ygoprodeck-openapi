@@ -17,5 +17,5 @@ get:
   responses:
     '200':
       $ref: '../components/responses/image.yaml'
-    '400':
-      $ref: '../components/responses/error.yaml'
+    '404':
+      description: Not Found

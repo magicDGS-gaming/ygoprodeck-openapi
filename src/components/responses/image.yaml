@@ -1,6 +1,7 @@
 description: |
   JPG image
 content:
-  image/jpg:
+  image/jpeg:
     schema:
+      type: string
       format: binary
