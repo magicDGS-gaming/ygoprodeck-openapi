@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Yu-Gi-Oh! API by YGOPRODeck
+  title: YGOPRODeck API
   version: v7
   termsOfService: https://ygoprodeck.com/api-guide/
   # license object is REQUIRED by redoc
