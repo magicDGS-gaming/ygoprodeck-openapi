@@ -16,6 +16,11 @@ servers:
   - url: https://db.ygoprodeck.com/api/v7
 externalDocs:
   url: https://ygoprodeck.com/api-guide/
+tags:
+  - name: ygoprodeck-db
+    description: Database API
+  - name: ygoprodeck-img
+    description: Images API
 
 paths:
   /cardinfo.php:
