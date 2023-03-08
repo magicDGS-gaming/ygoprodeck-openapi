@@ -17,9 +17,9 @@ servers:
 externalDocs:
   url: https://ygoprodeck.com/api-guide/
 tags:
-  - name: ygoprodeck-db
+  - name: database
     description: Database API
-  - name: ygoprodeck-img
+  - name: images
     description: Images API
 
 paths:

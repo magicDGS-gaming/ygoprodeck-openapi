@@ -1,6 +1,6 @@
 get:
   operationId: getImage
-  tags: [ygoprodeck-img]
+  tags: [images]
   security: []
   summary: Card Images
   description: |

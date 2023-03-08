@@ -1,6 +1,6 @@
 get:
   operationId: getRandomCard
-  tags: [ygoprodeck-db]
+  tags: [database]
   security: []
   summary: Random Card
   description: |
