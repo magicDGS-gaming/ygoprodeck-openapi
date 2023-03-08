@@ -1,0 +1,60 @@
+<!doctype html> <!-- Important: must specify -->
+<html>
+  <head>
+    <meta charset="utf-8"> <!-- Important: rapi-doc uses utf8 characters -->
+    <title>YGOProDeck API documentation</title>
+	<link rel="icon" href="https://images.ygoprodeck.com/images/assets/cropped-applogo_high-1-32x32.png" sizes="32x32" />
+	<link rel="icon" href="https://images.ygoprodeck.com/images/assets/cropped-applogo_high-1-192x192.png" sizes="192x192" />
+    <style>
+	  .btn{
+	    width: 90px;
+	    height: 32px;
+	    font-size:13px;
+	    background-color: #47AFE8;
+	    color: #fff;
+	    border: none;
+	    margin: 0 2px;
+	    border-radius: 2px;
+	    cursor:pointer;
+	    outline:none;
+	  }
+    </style>
+    <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+    <script>
+        function getRapiDoc(){
+          return document.getElementById("ygoprodeck-rapi-doc");
+        }
+    	function changeRenderStyle() {
+	      let currRender = getRapiDoc().getAttribute('render-style');
+	      let newRender = currRender === "read" ? "view" : "read";
+	      getRapiDoc().setAttribute('render-style', newRender );
+      	}
+    </script>
+  </head>
+  <body>
+    <rapi-doc id="ygoprodeck-rapi-doc"
+      spec-url = "../src/ygoprodeck-api.yaml"
+      show-header = 'true'
+      render-style = 'read'
+      layout = 'row'
+      update-route 	= 'false'
+      fill-request-fields-with-example = 'false'
+      allow-server-selection = 'false'
+      allow-authentication ='false'
+      allow-spec-url-load = 'false'
+      allow-spec-file-load = 'false'
+    >
+      <img style='display:flex; margin:0 16px;'
+        slot="logo"
+        src="https://images.ygoprodeck.com/images/assets/cropped-applogo_high-1-32x32.png"
+      />
+       <img
+        slot="nav-logo"
+        src="https://images.ygoprodeck.com/images/assets/ygoprodeck_header_logo.png"
+      />
+      <div slot='header' style='display:flex; margin:0 16px;'>
+        <button class="btn" style="margin-left:10px;" part="btn btn-fill" onclick='changeRenderStyle()' >Change View</button>
+  	  </div>
+    </rapi-doc>
+  </body>
+</html>
