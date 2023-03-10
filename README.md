@@ -2,19 +2,10 @@
 
 [OpenAPI](https://www.openapis.org/) Description of the [YGOPRODeck API](https://ygoprodeck.com/api-guide/).
 
-## Validate
- 
-To validate the API:
- 
- 
-```bash
-npx @redocly/cli@latest lint src/ygoprodeck-api.yaml
-```
-
 ## Bundle
+ 
 
-To bundle the API into a single file:
+To bundle the API into a single file, run `./bundle.sh`.
+This scripts also performs validation and if the definition is not valid it won't create the bundle.
 
-```
-npx @redocly/cli@latest bundle src/ygoprodeck-api.yaml -o bundle/ygoprodeck-api.yaml
-```
+The bundled YAML would be located under `bundle/ygoprodeck-api.yaml`
