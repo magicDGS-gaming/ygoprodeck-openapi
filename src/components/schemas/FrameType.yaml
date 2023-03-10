@@ -1,21 +1,22 @@
 type: string
-description: The backdrop type that this card uses
-enum:
-  - normal
-  - effect
-  - ritual
-  - fusion
-  - synchro
-  - xyz
-  - link
-  - normal_pendulum
-  - effect_pendulum
-  - ritual_pendulum
-  - fusion_pendulum
-  - synchro_pendulum
-  - xyz_pendulum
-  - spell
-  - trap
-  - token
-  - skill
+description: The backdrop type that this card uses.
+# FIXE #1: possibility that types are not well documented
+#enum:
+#  - normal
+#  - effect
+#  - ritual
+#  - fusion
+#  - synchro
+#  - xyz
+#  - link
+#  - normal_pendulum
+#  - effect_pendulum
+#  - ritual_pendulum
+#  - fusion_pendulum
+#  - synchro_pendulum
+#  - xyz_pendulum
+#  - spell
+#  - trap
+#  - token
+#  - skill
     

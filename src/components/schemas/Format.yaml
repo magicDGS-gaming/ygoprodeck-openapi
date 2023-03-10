@@ -1,0 +1,11 @@
+type: string
+description: Format where the card is present
+# FIXME #1: not all formats are documented
+#enum:
+# - tcg
+# - goat
+# - ocg
+# - goat
+# - speed duel
+# - rush duel
+# - duel links

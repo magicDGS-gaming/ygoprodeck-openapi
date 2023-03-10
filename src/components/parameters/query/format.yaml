@@ -9,6 +9,5 @@ description: |
   Using tcg results in all cards with a set TCG Release Date and excludes Speed Duel/Rush Duel cards._
 required: false
 schema:
-  # TODO: looks like not all the formats are documented! also maybe more would be added then!
-  # TODO: decide if we can do an enum here!
+  # FIXME #1: not all formats are documented
   type: string
