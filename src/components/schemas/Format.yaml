@@ -1,5 +1,5 @@
 type: string
-description: Format where the card is present
+description: The available formats the card is in (tcg, ocg, goat, ocg goat, duel links, rush duel or speed duel).
 # FIXME #1: not all formats are documented
 #enum:
 # - tcg

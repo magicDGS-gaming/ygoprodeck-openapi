@@ -18,10 +18,7 @@ properties:
   formats:
     type: array
     items:
-      type: string
-      # TODO: looks like not all the formats are documented! also maybe more would be added then!
-      # TODO: decide if we can do an enum here!
-    description: The available formats the card is in (tcg, ocg, goat, ocg goat, duel links, rush duel or speed duel).
+      $ref: 'Format.yaml'
   treated_a:
     type: string
     description: |
