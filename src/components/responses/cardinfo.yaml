@@ -8,7 +8,15 @@ description: |
 content:
   application/json:
     schema:
-      $ref: '../schemas/ResponseCardData.yaml'
+      type: object
+      title: CardInfoDTO
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '../schemas/Card.yaml'
+        meta:
+          $ref: '../schemas/Pagination.yaml'
     examples:
       defaultExample:
         $ref: '../examples/cardinfo_default.yaml'

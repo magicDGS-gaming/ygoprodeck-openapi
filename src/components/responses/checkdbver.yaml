@@ -10,4 +10,11 @@ content:
     schema:
       type: array
       items:
-        $ref: '../schemas/ResponseDBVersion.yaml'
+        type: object
+        title: CheckDBVersionDTO
+        properties:
+          database_version:
+            type: string
+          last_update:
+            type: string
+            # TODO: can be date or date-time?

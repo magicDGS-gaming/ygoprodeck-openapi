@@ -1,4 +1,0 @@
-type: object
-properties:
-  archetype_name:
-    type: string

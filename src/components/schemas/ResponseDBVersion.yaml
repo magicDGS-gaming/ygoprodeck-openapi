@@ -1,7 +1,0 @@
-type: object
-properties:
-  database_version:
-    type: string
-  last_update:
-    type: string
-    # TODO: cannot be date-time because it can is i.e. '2023-01-22 08:15:08'

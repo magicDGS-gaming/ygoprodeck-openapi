@@ -1,8 +1,0 @@
-type: object
-properties:
-  data:
-    type: array
-    items:
-      $ref: 'Card.yaml'
-  meta:
-    $ref: 'Pagination.yaml'

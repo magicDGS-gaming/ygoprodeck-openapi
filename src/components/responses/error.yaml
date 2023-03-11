@@ -8,6 +8,10 @@ description: |
 content:
   application/json:
     schema:
-      $ref: '../schemas/ResponseError.yaml'
+      type: object
+      title: ErrorDTO
+      properties:
+        error:
+          type: string
     example:
       error: 'Error message'
