@@ -45,3 +45,15 @@ properties:
     description: |
       If the card has an actual text effect. 1 means true and 0 is false.
       Examples of cards that do not have an actual effect (false/0)\: Black Skull Dragon, LANphorhynchus, etc etc.
+  staple:
+     $ref: 'YesSwitch.yaml'
+  question_atk:
+     type: integer
+     minimum: 0
+     maximum: 1
+     description: If the card has an atack that it is a `?`. 1 means true and not present (or 0) is false.
+  question_def:
+     type: integer
+     minimum: 0
+     maximum: 1
+     description: If the card has an atack that it is a `?`. 1 means true and not present (or 0) is false.
