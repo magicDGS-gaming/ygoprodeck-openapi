@@ -23,7 +23,7 @@ properties:
     type: array
     items:
       $ref: 'Format.yaml'
-  treated_a:
+  treated_as:
     type: string
     description: |
       If the card is treated as another card.
