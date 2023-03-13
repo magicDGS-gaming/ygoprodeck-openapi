@@ -1,5 +1,9 @@
 type: object
 properties:
+  beta_id:
+     type: integer
+     format: int64
+     description: The Old/Temporary IDthe card had.
   beta_name:
     type: string
     description: The Old/Temporary/Translated name the card had.
