@@ -5,5 +5,5 @@ description: |
   Use in conjuction with `num`
 required: false
 schema:
-  type: number
+  type: integer
   example: 0
