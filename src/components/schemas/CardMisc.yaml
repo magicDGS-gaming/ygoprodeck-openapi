@@ -32,6 +32,7 @@ properties:
     description: The original date the card was released in the OCG.
   konami_id:
     type: integer
+    format: int64
     description: The Official Konami ID of the card. __This is not the card ID/Passcode__.
   has_effect:
     type: integer

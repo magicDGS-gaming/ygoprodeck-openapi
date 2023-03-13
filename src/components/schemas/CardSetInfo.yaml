@@ -14,7 +14,8 @@ description: |
 properties:
   id:
     description: ID of the card (only on `cardsetinfo.php`)
-    type: number
+    type: integer
+    format: int64
   name:
     description: Name of the card (only on `cardsetinfo.php`)
     type: string
