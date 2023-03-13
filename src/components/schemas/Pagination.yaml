@@ -2,24 +2,24 @@ type: object
 description: Pagination information
 properties:
   current_rows:
-    type: number
+    type: integer
     description: Number of items currently displayed
   total_rows:
-    type: number
+    type: integer
     description: Total number of items
   rows_remaining:
-    type: number
+    type: integer
     description: Remaining number of items
   total_pages:
-    type: number
+    type: integer
     description: Total number of pages with this pagination
   pages_remaining:
-    type: number
+    type: integer
   next_page:
     type: string
     format: url
     description: URL for the next page
   next_page_offset:
-    type: number
+    type: integer
     example: 2
     description: Offset to be used for the next page reques
