@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "@redocly bundle ../src/ygoprodeck-api.yaml -d -o ygoprodeck-api.d.yaml",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@redocly/cli": "^1.0.0-beta.124",
+    "jest": "^29.5.0",
+    "jest-openapi": "^0.14.2",
+    "supertest": "^6.3.3"
+  }
+}
