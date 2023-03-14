@@ -12,6 +12,7 @@ schema:
   type: array
   items:
     type: integer
+    format: int64
 examples:
   singleValue:
     summary: Single value

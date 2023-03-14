@@ -7,3 +7,4 @@ description:  |
 required: false
 schema:
   type: integer
+  format: int64

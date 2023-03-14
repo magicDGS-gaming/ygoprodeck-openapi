@@ -3,7 +3,7 @@ properties:
   beta_id:
      type: integer
      format: int64
-     description: The Old/Temporary IDthe card had.
+     description: The Old/Temporary ID the card had.
   beta_name:
     type: string
     description: The Old/Temporary/Translated name the card had.
