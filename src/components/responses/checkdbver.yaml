@@ -17,4 +17,4 @@ content:
             type: string
           last_update:
             type: string
-            # TODO: can be date or date-time?
+            format: date-time
