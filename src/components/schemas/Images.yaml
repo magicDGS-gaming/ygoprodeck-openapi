@@ -2,7 +2,8 @@ type: object
 description: URLs for different image types
 properties:
   id:
-    type: number
+    type: integer
+    format: int64
     description: ID or Passcode of the card
   image_url:
     description: URL for the full size image
