@@ -1,0 +1,4 @@
+type: string
+format: date
+description: What date format you pass can be slightly varied as the API picks up different formats and converts it regardless
+example: 01/01/2000

@@ -2,14 +2,13 @@ name: startdate
 in: query
 description: |
   Query release dates for cards and the region of these release dates (TCG or OCG).
-  
-  What date format you pass to startdate and enddate can be slightly varied as our API picks up different formats and converts it regardless.
 required: false
+schema:
+  $ref: '../../../schemas/DateFormat.yaml'
 examples:
   date_format_1:
-    $ref: '../../../examples/date_format_1.yaml'
+    summary: Date format (1)
+    value: Jan 01 2000
   date_format_2:
-    $ref: '../../../examples/date_format_2.yaml'
-schema:
-  type: string
-  format: date
+    summary: Date format (2)
+    value: 01/01/2000
