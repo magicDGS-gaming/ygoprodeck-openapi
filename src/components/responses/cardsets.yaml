@@ -17,6 +17,6 @@ content:
           tcg_date:
             type: string
             format: date
-          set_info:
+          set_image:
             type: string
             format: url
