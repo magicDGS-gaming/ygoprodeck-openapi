@@ -1,0 +1,30 @@
+name: Build
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # creates the bundle
+      - name: Bundle
+        run: ./bundle.sh
+      
+      # upload the artifact to the workflow
+      - name: Upload Bunlde
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: ygoprodeck-api.yaml
+          path: bundle/ygoprodeck-api.yaml
+          if-no-files-found: error
