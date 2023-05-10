@@ -1,4 +1,6 @@
 # YGOPRODeck OpenAPI
+[![Build](https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/build.yml/badge.svg?branch=main)](
+https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/build.yml?query=branch%3Amain)
 
 [OpenAPI](https://www.openapis.org/) Description of the [YGOPRODeck API](https://ygoprodeck.com/api-guide/).
 
