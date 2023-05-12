@@ -1,6 +1,6 @@
 local: dist/ygoprodeck-api.yaml
 output: dist/ygoprodeck.postman.json
-portmanConfigFile: portman/portman-config.json
+portmanConfigFile: portman/portman-config.yaml
 postmanConfigFile: portman/openapi-to-postman-config.json
 includeTests: true
 syncPostman: false
