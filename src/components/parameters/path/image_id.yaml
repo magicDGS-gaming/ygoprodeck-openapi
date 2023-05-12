@@ -5,3 +5,4 @@ description: ID for the card
 schema:
   type: integer
   format: int64
+  example: 55144522
