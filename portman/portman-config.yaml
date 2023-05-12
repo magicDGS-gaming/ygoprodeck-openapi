@@ -1,0 +1,38 @@
+version: 1
+tests:
+  contractTests:
+    - openApiOperation: '*::/*'
+      statusSuccess:
+        enabled: true
+    - openApiOperation: '*::/*'
+      responseTime:
+        enabled: false
+        maxMs: 300
+    - openApiOperation: '*::/*'
+      excludeForOperations:
+        - images
+      contentType:
+        enabled: true
+    - openApiOperation: '*::/*'
+      jsonBody:
+        enabled: true
+    - openApiOperation: '*::/*'
+      schemaValidation:
+        enabled: true
+    - openApiOperation: '*::/*'
+      headersPresent:
+        enabled: true
+  contentTests: []
+  extendTests: []
+  variationTests: []
+assignVariables: []
+overwrites: []
+globals:
+  stripResponseExamples: true
+  collectionPreRequestScripts: []
+  keyValueReplacements: {}
+  valueReplacements: {}
+  rawReplacements: []
+  portmanReplacements:
+    - searchFor: '"last_update":{"type":"string","format":"date-time"}'
+      replaceWith: '"last_update":{"type":"string"}'

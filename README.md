@@ -12,3 +12,8 @@ To bundle the API into a single file, run `./scripts/build.sh`.
 This script also performs the validation and if the definition is not valid it won't create the bundle.
 
 The bundled YAML would be located under `dist/ygoprodeck-api.yaml`
+
+## Test
+
+To generate a postman collection and run the tests with newman, run `./scripts/test.sh`.
+The postman collection (also part of the distribution) YAML be located under `dist/ygoprodeck.postman.yaml`

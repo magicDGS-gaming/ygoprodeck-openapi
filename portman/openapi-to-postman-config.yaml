@@ -1,0 +1,5 @@
+requestNameSource: summary
+folderStrategy: Tags
+requestParametersResolution: Example
+showMissingInSchemaErrors: true
+enableOptionalParameters: false

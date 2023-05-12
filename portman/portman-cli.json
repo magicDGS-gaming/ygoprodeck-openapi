@@ -1,0 +1,9 @@
+{
+  "local": "dist/ygoprodeck-api.yaml",
+  "output": "dist/ygoprodeck.postman.json",
+  "portmanConfigFile": "portman/portman-config.json",
+  "postmanConfigFile": "portman/openapi-to-postman-config.json",
+  "includeTests": true,
+  "syncPostman": false,
+  "runNewman": false
+}
