@@ -20,14 +20,14 @@ jobs:
 
       # creates the bundle
       - name: Bundle
-        run: ./bundle.sh
+        run: ./scripts/build.sh
       
       # upload the artifact to the workflow
       - name: Upload Bundle
         uses: actions/upload-artifact@v3.1.2
         with:
           name: ygoprodeck-api.yaml
-          path: bundle/ygoprodeck-api.yaml
+          path: dist/ygoprodeck-api.yaml
           if-no-files-found: error
           
       - name: Pre-release
@@ -36,4 +36,4 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
-          files: bundle/ygoprodeck-api.yaml
+          files: dist/ygoprodeck-api.yaml

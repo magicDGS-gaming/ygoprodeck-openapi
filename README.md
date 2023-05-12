@@ -6,10 +6,9 @@ https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/build.ym
 
 [OpenAPI](https://www.openapis.org/) Description of the [YGOPRODeck API](https://ygoprodeck.com/api-guide/).
 
-## Bundle
- 
+## Build
 
-To bundle the API into a single file, run `./bundle.sh`.
-This scripts also performs validation and if the definition is not valid it won't create the bundle.
+To bundle the API into a single file, run `./scripts/build.sh`.
+This script also performs the validation and if the definition is not valid it won't create the bundle.
 
-The bundled YAML would be located under `bundle/ygoprodeck-api.yaml`
+The bundled YAML would be located under `dist/ygoprodeck-api.yaml`
