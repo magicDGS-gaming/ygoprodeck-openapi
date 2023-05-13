@@ -1,0 +1,23 @@
+get:
+  operationId: getSetImage
+  tags: [images]
+  security: []
+  summary: Card Set Images
+  description: |
+    __Images are pulled from our image server `images.ygoprodeck.com`.
+    You must download and store these images yourself!__
+    
+    Please only pull an image __once__ and then store it locally.
+    If we find you are pulling a very high volume of images per second then your IP will be blacklisted and blocked.
+    
+    Our card images are in `.jpg` format and are web optimized.
+  servers:
+      - url: https://images.ygoprodeck.com
+        description: Override base path for all operations with images
+  parameters:
+    - $ref: '../components/parameters/path/image_set_code.yaml'
+  responses:
+    '200':
+      $ref: '../components/responses/image.yaml'
+    '404':
+      description: Not Found

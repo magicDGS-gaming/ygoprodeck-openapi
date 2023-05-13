@@ -1,5 +1,5 @@
 get:
-  operationId: getImage
+  operationId: getCardImage
   tags: [images]
   security: []
   summary: Card Images
@@ -15,7 +15,6 @@ get:
       - url: https://images.ygoprodeck.com
         description: Override base path for all operations with images
   parameters:
-    - $ref: '../components/parameters/path/image_type.yaml'
     - $ref: '../components/parameters/path/image_id.yaml'
   responses:
     '200':

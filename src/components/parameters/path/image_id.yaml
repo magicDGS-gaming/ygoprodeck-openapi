@@ -1,4 +1,4 @@
-name: image_id
+name: id
 in: path
 required: true
 description: ID for the card

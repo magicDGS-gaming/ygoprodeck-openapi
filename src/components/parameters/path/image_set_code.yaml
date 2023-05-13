@@ -1,0 +1,7 @@
+name: set_code
+in: path
+required: true
+description: Set code from the card
+schema:
+  type: string
+  example: YS15
