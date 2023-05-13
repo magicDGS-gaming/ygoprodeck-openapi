@@ -20,11 +20,11 @@ jobs:
 
       # creates the bundle
       - name: Build
-        run: ./scripts/build.sh
+        run: make build
 
       # create the postman json and run tests
       - name: Test
-        run: ./scripts/test.sh
+        run: make test
       
       # upload the artifact to the workflow
       - name: Upload Distribution
