@@ -1,0 +1,21 @@
+name: daily-test
+
+# Run at the end of every day
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # creates the bundle
+      - name: Build
+        run: make build
+
+      # create the postman json and run tests
+      - name: Test
+        run: make test
