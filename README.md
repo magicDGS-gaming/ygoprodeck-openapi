@@ -1,6 +1,7 @@
 # YGOPRODeck OpenAPI
-[![Build](https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/build.yml/badge.svg?branch=main)](
-https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/build.yml?query=branch%3Amain)
+[![CI](https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/ci.yml/badge.svg?branch=main)](
+https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/ci.yml?query=branch%3Amain)
+[![Daily Test](https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/daily-test.yml/badge.svg?branch=main)](https://github.com/magicDGS-gaming/ygoprodeck-openapi/actions/workflows/daily-test.yml)
 [![Release](https://img.shields.io/github/v/tag/magicDGS-gaming/ygoprodeck-openapi?label=release&logo=github&sort=semver)](https://github.com/magicDGS-gaming/ygoprodeck-openapi/releases)
 
 
