@@ -24,7 +24,32 @@ tests:
         enabled: true
   contentTests: []
   extendTests: []
-  variationTests: []
+  variationTests:
+    - openApiOperation: 'GET::/cardinfo.php'
+      openApiResponse: '200'
+      variations:
+        - name: 'Misc parameter'
+          overwrites:
+            - overwriteRequestQueryParams:
+              - key: misc
+                value: 'yes'
+                overwrite: true
+                disable: false
+          tests:
+            contractTests:
+              - statusSuccess:
+                  enabled: true
+              - responseTime:
+                  enabled: false
+                  maxMs: 300
+              - contentType:
+                  enabled: true
+              - jsonBody:
+                  enabled: true
+              - schemaValidation:
+                  enabled: true
+              - headersPresent:
+                  enabled: true
 assignVariables: []
 overwrites: []
 globals:
