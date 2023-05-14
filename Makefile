@@ -1,3 +1,5 @@
+all: build test
+
 clean-yaml:
 	rm -f dist/*.yaml
 
@@ -12,7 +14,8 @@ lint:
 build: clean-all lint
 	npx @redocly/cli@latest bundle src/ygoprodeck-api.yaml -o dist/ygoprodeck-api.yaml
 
+postman-collection: clean-json
+	npx @apideck/portman@latest --cliOptionsFile portman/portman-cli.yaml
+
 test: clean-json
 	npx @apideck/portman@latest --cliOptionsFile portman/portman-cli.yaml --runNewman
-
-all: build test
