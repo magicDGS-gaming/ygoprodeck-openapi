@@ -1,0 +1,5 @@
+type: string
+description: Region for the release date
+enum:
+  - tcg_date
+  - ocg_date

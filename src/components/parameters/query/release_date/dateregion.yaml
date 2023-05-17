@@ -1,14 +1,6 @@
 name: dateregion
 in: query
-description: |
-  Query release dates for cards and the region of these release dates (TCG or OCG).
+description: Region for querying release dates
 required: false
 schema:
-  $ref: '../../../schemas/DateFormat.yaml'
-examples:
-  date_format_1:
-    summary: Date format (1)
-    value: Jan 01 2000
-  date_format_2:
-    summary: Date format (2)
-    value: 01/01/2000
+  $ref: '../../../schemas/DateRegion.yaml'
