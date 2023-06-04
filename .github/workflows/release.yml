@@ -1,0 +1,39 @@
+name: release
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      releaseVersion:
+        description: Release version
+        required: true
+        default: 'v0.1.0'
+      preRelease:
+        description: True if a pre-release; false otherwise
+        type: boolean
+        required: true
+        default: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # creates the bundle
+      - name: Build
+        run: make build postman-collection
+          
+      - name: Release
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+    
+        if: 
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: ${{ github.event.inputs.preRelease }}
+          automatic_release_tag: ${{ github.event.inputs.releaseVersion }}
+          files: |
+            dist/ygoprodeck-api.yaml
+            dist/ygoprodeck.postman.json
