@@ -18,7 +18,27 @@ We aim to provide a documentation-as-code describing the API to allow developers
 
 _Note that as a third-party project without affiliation to the [YGOPRODeck API] the interoperability might be broken. We rely on your help to keep it in sync through pull-requests and/or issues._
 
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/magicDGS-gaming/ygoprodeck-api/blob/main/CONTRIBUTING.md).
+for details on our code of conduct, and the process for collaborating on the project.
+
+### Bug reports
+
+Before submitting a new bug report, please search for keywords in our [Issue Tracker][issue_tracker].
+If you cannot find your problem, fill in a new [issue][issue_tracker].
+
 ## Getting started
+
+### Pre-requisites
+
+The project only requires `npm` to be installed, relying on the `npx` command to run redocly and portman.
+
+We recommend to use an IDE with support for OpenAPI to edit the YAML files.
+
+Postman can also be used to open both artifacts (OpenAPI and postman collection).
+
+## Build & Test
 
 To build and test the description and postman collection run `make`.
 This will create the following artifacts:
@@ -26,14 +46,14 @@ This will create the following artifacts:
 * `dist/ygoprodeck-api.yaml` - bundled OpenAPI YAML
 * `dist/ygoprodeck.postman.json` - postman collection JSON
 
-### Build
+### Bundle only
 
 To bundle the API into a single file, run `make build`.
 This script also performs the validation and if the definition is not valid it won't create the bundle.
 
 To create the postman collection without tests, run `make postman-collection`
 
-### Test
+### Test only
 
 To only run the tests with newman, run `make test` (as it is run with portman, the postman collection would be also created). This requires that a build for the bubdled OpenAPI description is alredy in place.
 
@@ -46,3 +66,5 @@ The [YGOPRODeck API] is not affiliated with this project and it is provided as a
 <!-- references -->
 [YGOPRODeck]: https://ygoprodeck.com/
 [YGOPRODeck API]: https://ygoprodeck.com/api-guide/
+[issue_tracker]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/issues
+[pull_requests]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/pulls

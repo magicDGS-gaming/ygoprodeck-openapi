@@ -32,6 +32,6 @@ If you contribute to _ygoprodeck-openapi_ significantly (e.g., with a Pull Reque
 
 Currently we do not have any major contributor to the project. Be the first!
 
-[code_of_conduct]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/blob/master/CODE_OF_CONDUCT.md
+[code_of_conduct]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/blob/main/CODE_OF_CONDUCT.md
 [issue_tracker]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/issues
 [pull_requests]: https://github.com/magicDGS-gaming/ygoprodeck-openapi/pulls
