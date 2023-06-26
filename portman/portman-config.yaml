@@ -36,3 +36,5 @@ globals:
   portmanReplacements:
     - searchFor: '"last_update":{"type":"string","format":"date-time"}'
       replaceWith: '"last_update":{"type":"string"}'
+    - searchFor: '"enum":["yes"]'
+      replaceWith: '"enum":["yes", "Yes"]'
